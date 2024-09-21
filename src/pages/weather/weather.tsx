@@ -8,16 +8,17 @@ import { fetchWeather } from "../../services/user";
 import { DropsIcon } from "../../assets/icons/dropsIcon";
 import { WindIcon } from "../../assets/icons/windIcon";
 import { EyeIcon } from "../../assets/icons/eyeIcon";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { handleGetUser, handleVerifyUser } from "../../redux/userSlice";
 
 export const WeatherPage = () => {
-  const { id } = useParams()
+  const [params] = useSearchParams()
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { selectedUser, weather, dataUser } = useAppSelector((state) => state.counter);
 
   useEffect(() => {
+    const id = params.get('id')  
     dispatch(handleVerifyUser(id ? Number(id) : 0))
     if (!dataUser.length) dispatch(handleGetUser())
   }, [])

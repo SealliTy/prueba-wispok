@@ -42,7 +42,7 @@ export const UserPage = () => {
             viewButtons
             onClickDetails={() => {
               dispatch(handleSelectedUser(user));
-              navigate(`${pathProyect}weather/${user.id}`)
+              navigate(`${pathProyect}weather?id=${user.id}`)
             }}
             onClickDelete={() => {
               dispatch(handleModalDeleteUser())

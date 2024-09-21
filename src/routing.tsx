@@ -9,22 +9,10 @@ const pathProyect = import.meta.env.BASE_URL;
 function Routing() {
   return (
     <Routes>
-      <Route
-        path={`${pathProyect}`}
-        element={
-          <Layout>
-            <UserPage />
-          </Layout>
-        }
-      />
-      <Route
-        path={`${pathProyect}weather/:id`}
-        element={
-          <Layout>
-            <WeatherPage />
-          </Layout>
-        }
-      />
+      <Route element={<Layout />}>
+        <Route path={`${pathProyect}`} element={<UserPage />} />
+        <Route path={`${pathProyect}weather`} element={<WeatherPage />} />
+      </Route>
       <Route path="*" element={<Error />} />
     </Routes>
   );

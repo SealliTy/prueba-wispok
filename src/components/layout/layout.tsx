@@ -2,12 +2,9 @@ import "./layout.css";
 import { useAppDispatch } from "../../redux/store";
 import { handleModalUser } from "../../redux/userSlice";
 import { Button } from "../atoms/button/button";
+import { Outlet } from "react-router-dom";
 
-interface ILayout {
-  children: React.ReactNode;
-}
-
-export const Layout = ({ children }: ILayout) => {
+export const Layout = () => {
   const dispatch = useAppDispatch();
 
   return (
@@ -20,7 +17,9 @@ export const Layout = ({ children }: ILayout) => {
           </Button>
         </div>
       </header>
-      <section className="container_section_layout">{children}</section>
+      <section className="container_section_layout">
+        <Outlet />
+      </section>
     </main>
   );
 };
