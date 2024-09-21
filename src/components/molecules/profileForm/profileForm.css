@@ -1,0 +1,5 @@
+.container_profile_form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

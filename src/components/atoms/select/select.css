@@ -1,0 +1,34 @@
+.select_atomic {
+  background-color: #F4F4F5;
+  width: 262px;
+  height: 38px;
+  border-radius: 8px;
+  padding: 0 12px;
+  border: none;
+}
+
+.select_atomic:valid {
+  font-size: 14px;
+  color: #A1A1AA;
+}
+
+.select_atomic:focus {
+  outline: none;
+}
+
+.select_atomic option:first-child {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .select_atomic {
+    width: 240px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  .select_atomic:valid {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

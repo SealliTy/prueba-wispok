@@ -1,0 +1,36 @@
+.container_modal_user {
+  display: flex;
+  gap: 32px;
+}
+
+.modal_content_form_user {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal_content_form_user .headline_3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.modal_content_form_user .container_coordinates {
+  display: flex;
+  gap: 20px;
+}
+
+.modal_content_form_user .button_submit_user {
+  margin-top: 12px;
+  max-width: fit-content;
+}
+
+.container_modal_user .container_img_map {
+  width: 466px;
+  height: 392px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+}

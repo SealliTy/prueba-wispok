@@ -1,0 +1,44 @@
+.container_modal_delete_user {
+  display: flex;
+  gap: 32px;
+}
+
+.modal_content_delete_user {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal_content_delete_user .headline_3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.modal_content_delete_user .headline_4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.modal_content_delete_user .container_content_confirm_delete {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal_content_delete_user .container_delete_user_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal_content_delete_user .container_delete_user_buttons .button_keep_user {
+  background-color: #DDE5FF;
+  border: 2px solid #5556FF;
+  color: #5556FF;
+}
+
+@media (max-width: 1024px) {
+}

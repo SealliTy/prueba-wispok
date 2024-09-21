@@ -1,0 +1,27 @@
+.container_header_layout {
+  display: flex;
+  justify-content: center;
+  background-color: #ECF1FF;
+  position: fixed;
+  height: 108px;
+  width: 100%;
+}
+
+.container_header_layout div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1120px;
+}
+
+.container_header_layout h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #27272A;
+}
+
+.container_section_layout {
+  padding-top: 108px;
+}

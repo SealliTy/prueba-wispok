@@ -1,0 +1,29 @@
+.button_atomic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #5556FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .button_atomic {
+    height: 24px;
+    padding: 4px 12px;
+    gap: 4px;
+  }
+  .button_atomic svg {
+    width: 16px;
+    height: 16px;
+  }
+}

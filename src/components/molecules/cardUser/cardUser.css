@@ -1,0 +1,91 @@
+.container_card_user {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 352px;
+  background-color: #F4F4F5;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.container_card_user .container_card_user_image {
+  width: 304px;
+  height: 304px;
+  border-radius: 18px;
+}
+
+.container_card_user .container_card_user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container_card_user .container_card_user_info h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.container_card_user .container_card_user_info .container_location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.container_card_user .container_card_user_info .container_location span {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.container_card_user .container_card_user_info .container_buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.container_card_user .container_card_user_info .container_buttons .button_details {
+  background-color: #DDE5FF;
+  border: 2px solid #5556FF;
+  color: #5556FF;
+}
+
+.container_card_user .container_card_user_info .container_buttons .button_delete {
+  width: 44px;
+  height: 44px;
+  background-color: #DDE5FF;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .container_card_user {
+    gap: 24px;
+    width: 272px;
+    height: 388px;
+    padding: 16px;
+  }
+  
+  .container_card_user .container_card_user_image {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .container_card_user .container_card_user_info h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .container_card_user .container_card_user_info .container_location span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .container_card_user .container_card_user_info .container_buttons .button_details {
+    height: 32px;
+  }
+  
+  .container_card_user .container_card_user_info .container_buttons .button_delete {
+    width: 32px;
+    height: 32px;
+  } 
+}

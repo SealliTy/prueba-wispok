@@ -1,0 +1,24 @@
+.container_input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container_input-label .label_molecule {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #18181B;
+}
+
+@media (max-width: 1024px) {
+  .container_input-label {
+    gap: 8px;
+  }
+  
+  .container_input-label .label_molecule {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

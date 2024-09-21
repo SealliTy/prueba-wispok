@@ -1,0 +1,15 @@
+.profile_picture_atomic {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background-color: #323232;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1024px) {
+  .profile_picture_atomic {
+    width: 60px;
+    height: 60px;
+  }
+}
