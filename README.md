@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Proyecto Weather APP
 
 Para correr el proyecto necesitan hacer:
 - npm install
