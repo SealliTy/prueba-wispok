@@ -19,11 +19,9 @@ export const WeatherPage = () => {
 
   useEffect(() => {
     const id = params.get('id')
-    console.log('123', id, selectedUser, weather, dataUser);
-    
     dispatch(handleVerifyUser(id ? Number(id) : 0))
     if (!dataUser.length) dispatch(handleGetUser())
-  }, [])
+  }, [dataUser])
 
   useEffect(() => {
     if (selectedUser.id) dispatch(fetchWeather(selectedUser))
