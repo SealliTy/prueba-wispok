@@ -3,6 +3,7 @@
 Para correr el proyecto necesitan hacer:
 - npm install
 - npm run dev
+- se utilizo la api de https://openweathermap.org/ (Se necesita registrar para obtener la api key para utilizarlo en el proyecto)
 
 # Algunas imagenes del proyecto:
 
